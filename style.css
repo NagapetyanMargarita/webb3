@@ -22,6 +22,11 @@ header{
         background-color: #d6c1db;
         border: 2px solid #000000;
     }
+    .fon1{ width: 70%; 
+        margin: auto;
+        background-color: #d6c1db;
+        border: 2px solid #000000;
+    }
     
     .chet
     { 
@@ -41,7 +46,7 @@ header{
     .form-group{
         padding-left:35px;
     }
-    #pole{
+    .pole{
         width: 650px;
     }
     #form1{
