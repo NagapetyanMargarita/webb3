@@ -16,17 +16,20 @@ header{
     a{
         color: #0a021fea;
     }
+    .fon1{ 
+        width: 70%; 
+        margin: auto;
+        background-color: #d6c1db;
+        border: 2px solid #000000;
+
+    }
     .fon{
         width: 50%; 
         margin: auto;
         background-color: #d6c1db;
         border: 2px solid #000000;
     }
-    .fon1{ width: 70%; 
-        margin: auto;
-        background-color: #d6c1db;
-        border: 2px solid #000000;
-    }
+    
     
     .chet
     { 
