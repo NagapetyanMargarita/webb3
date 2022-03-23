@@ -1,8 +1,12 @@
 const form = document.getElementById('form');
+
     form.addEventListener('submit',formSend);
     async function formSend(e) {
         e.preventDefault();
-        
+         let names = document.getElementById('name');
+            let email = document.getElementById('email');
+            let date = document.getElementById('date');
+            let soglasie = document.getElementById('soglasie');
         let error = formValidate(form);
 
         let formData = new FormData(form);
@@ -26,8 +30,22 @@ const form = document.getElementById('form');
             }
             
         }else{
-            alert('Заполните поля!');
+           
+            if(names.value ===''){
+                alert('Ошибка в поле Имя!');
+            }    
+            if(emailTest(email)){
+                alert('Ошибка в поле email!');
+            }           
+            if(date.value=== ''){
+                alert('Ошибка в поле Дата рождения!');
+            }
+            if(soglasie.checked=== false){
+                alert('Подтвердите согласие!');
+            }
+            
         }
+        
         
     }
 
@@ -47,7 +65,6 @@ const form = document.getElementById('form');
             }else if(input.getAttribute("type")==="checkbox"&&input.checked ===false){
                 formAddError(input);
                 error++;
-    
             }else{
                 if(input.value === ''){
                     formAddError(input);
